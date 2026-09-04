@@ -20,7 +20,7 @@ let package = Package(
     ],
     dependencies: [
         // Mark: Dependencies Begin
-        .package(url: "https://github.com/AddApptr/AATKit.git", exact: "3.18.0-beta2"),
+        .package(url: "https://github.com/AddApptr/AATKit.git", exact: "3.18.0-beta3"),
         // Mark: Dependencies End
     ],
     // Mark: Targets
@@ -31,7 +31,7 @@ let package = Package(
                     .product(name: "AATKit-Core", package: "AATKit"),
                     "AATTeadsAdapter",
                     "AATTeadsSDK",
-                    "AATOMSDK_Teadstv",
+                    "AATOMSDK_Teads",
                     // Mark: Target Dependencies End
                 ],
                 path: "./Sources/AATKit-Teads"),
@@ -39,18 +39,18 @@ let package = Package(
         // Mark: Binary Targets
         .binaryTarget(
             name: "AATTeadsAdapter",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta2/AATTeadsAdapter.zip",
-            checksum: "6976440c9d1c8a4a1a94a133199ff5f23d8a91997e21dedc467e2011be638127"
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/AATTeadsAdapter.zip",
+            checksum: "b9ea0aa6d7f763115a362b7eaf5e5c44da0cbbeb204db9a88200d93d448fbf90"
         ),
         .binaryTarget(
             name: "AATTeadsSDK",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta2/TeadsSDK.zip",
-            checksum: "98ded585d017267c5bfa7ff9c142c9c2889a3747165a66480456337b29229498"
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/TeadsSDK.zip",
+            checksum: "5c6bc7d175fb455633c2518f5b29569ea4f6c3b69dc9bc098b10348d0b2b09fd"
         ),
         .binaryTarget(
-            name: "AATOMSDK_Teadstv",
-            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta2/OMSDK_Teadstv.zip",
-            checksum: "73047c9d464779ac0967599b1df3189b5ec50d7b6612e9c5c6137bb2e555e0f1"
+            name: "AATOMSDK_Teads",
+            url: "https://gravite-sdk-releases.s3.eu-central-1.amazonaws.com/aatkit/ios/spm/3.18.0-beta3/OMSDK_Teads.zip",
+            checksum: "2558c25f3d0eaa40f9a6d1935202c4d7b18d3d60b8eed6150be9ae9de379f0b5"
         ),
     ]
 )
